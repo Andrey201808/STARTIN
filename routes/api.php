@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProjectController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\UserController;
@@ -17,4 +18,11 @@ use \App\Http\Controllers\UserController;
 
 Route::controller(UserController::class)->middleware('auth:sanctum')->prefix('user')->group(function () {
     Route::post('registration', 'registration')->withoutMiddleware('auth:sanctum');
+    Route::post('getUser', 'user');
+    Route::post('fillWorksheet', 'fillWorksheet');
+    Route::post('login', 'login')->withoutMiddleware('auth:sanctum');
+});
+
+Route::controller(ProjectController::class)->middleware(['auth:sanctum', 'activeUser'])->prefix('project')->group(function () {
+    Route::post('createProject', 'createProject');
 });

@@ -21,6 +21,12 @@ return new class extends Migration
             $table->char('last_name', 255)->nullable();
             $table->char('middle_name', 255)->nullable();
             $table->char('phone', 255)->nullable();
+            $table->date('birth_date')->nullable();
+            $table->char('sex', 255)->nullable();
+            $table->char('country', 255)->nullable();
+            $table->char('city', 255)->nullable();
+            $table->text('achievements')->nullable();
+            $table->integer('have_team')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
