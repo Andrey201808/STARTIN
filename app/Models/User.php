@@ -40,4 +40,10 @@ class User extends Authenticatable
         return $this->hasMany(UserSkill::class, 'user_id');
     }
 
+
+    public function userCrew()
+    {
+        return $this->hasMany(UserCrew::class, 'user_id');
+    }
+
 }

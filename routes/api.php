@@ -25,4 +25,17 @@ Route::controller(UserController::class)->middleware('auth:sanctum')->prefix('us
 
 Route::controller(ProjectController::class)->middleware(['auth:sanctum', 'activeUser'])->prefix('project')->group(function () {
     Route::post('createProject', 'createProject');
+    Route::post('publishProject', 'publishProject');
+    Route::post('deleteProject', 'deleteProject');
+    Route::post('getUserProjects', 'getUserProjects');
+    Route::post('joinToProject', 'joinToProject');
+});
+
+
+Route::controller(ProjectController::class)->middleware(['auth:sanctum', 'adminUser'])->prefix('project')->group(function () {
+    Route::post('createProject', 'createProject');
+    Route::post('publishProject', 'publishProject');
+    Route::post('deleteProject', 'deleteProject');
+    Route::post('getUserProjects', 'getUserProjects');
+    Route::post('joinToProject', 'joinToProject');
 });

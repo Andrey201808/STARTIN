@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name', 255)->nullable();
             $table->text('description')->nullable();
+            $table->string('invite_url', 255)->nullable();
             $table->char('status', 255)->nullable();
             $table->integer('project_id')->nullable();
             $table->timestamps();

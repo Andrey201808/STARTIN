@@ -10,4 +10,9 @@ class UserCrew extends Model
     use HasFactory;
 
     protected $guarded = [];
+
+    public function userProject()
+    {
+        return $this->hasOne(UserProject::class, 'user_project_id');
+    }
 }
