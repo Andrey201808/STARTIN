@@ -1,0 +1,46 @@
+.public {
+  width: 880px;
+  border-radius: 20px;
+  background: #FFFFFF;
+  padding: 30px 30px 40px 40px; 
+  margin-top: 20px;
+}
+.info-form__close-btn {
+  width: 19px;
+  height: 19px;
+  border: none;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+.profile-input__value {
+  width: 240px;
+  height: 46px;
+  border: 2px solid #36A9E1;
+  border-radius: 10px;
+  background: #FFFFFF;
+  font-size: 18px;
+  padding: 10px 23px;
+  box-sizing: border-box;
+  color: #000000;
+}
+.profile-input__value:focus {
+  outline: none;
+
+}
+.profile-input__value_wide {
+  width: 100%;
+  }
+.profile-input__value_description {
+  width: 100%;
+  height: 220px;
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  resize: none;
+  overflow: auto;
+}
+.public-form {
+  margin-top: 40px;
+}

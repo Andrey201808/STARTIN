@@ -1,0 +1,21 @@
+.profile {
+  padding: 40px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.profile-container {
+  margin: 0 auto;
+}
+.add-btn {
+  width: 18px;
+  height: 18px;
+  border: none;
+  background: #F3F3F3;
+  cursor: pointer;
+  display: none;
+  margin-top: 10px;
+}
+.add-btn_active {
+  display: block;
+}

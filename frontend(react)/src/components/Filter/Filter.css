@@ -1,0 +1,12 @@
+.filter-button {
+	width: 100%;
+	display: flex;
+	background: #ffffff;
+	border: none;
+	margin-bottom: 17px;
+	cursor: pointer;
+}
+.filter-button_active {
+	border: 1px solid #EAEAEA;
+	
+}

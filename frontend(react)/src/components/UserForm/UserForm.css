@@ -1,0 +1,42 @@
+.user-status {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #24FF00;
+  margin-left: 5px;
+}
+.user {
+  width: 880px;
+  border-radius: 20px;
+  background: #FFFFFF;
+  padding: 30px 30px 40px 40px; 
+}
+.user-form__edit-btn {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: #FFFFFF;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.user-form__edit-btn_active {
+  border: 3px solid #36A9E1;
+  /* background-color: #36A9E1; */
+}
+.profile-input__value {
+  width: 240px;
+  height: 46px;
+  border: 2px solid #36A9E1;
+  border-radius: 10px;
+  background: #FFFFFF;
+  font-size: 18px;
+  padding: 10px 23px;
+  box-sizing: border-box;
+  color: #000000;
+}
+.user-avatar {
+  text-align: center;
+  margin-right: 30px;
+}
