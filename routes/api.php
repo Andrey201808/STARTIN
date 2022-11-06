@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProjectController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -32,10 +33,6 @@ Route::controller(ProjectController::class)->middleware(['auth:sanctum', 'active
 });
 
 
-Route::controller(ProjectController::class)->middleware(['auth:sanctum', 'adminUser'])->prefix('project')->group(function () {
-    Route::post('createProject', 'createProject');
-    Route::post('publishProject', 'publishProject');
-    Route::post('deleteProject', 'deleteProject');
-    Route::post('getUserProjects', 'getUserProjects');
-    Route::post('joinToProject', 'joinToProject');
+Route::controller(AdminController::class)->middleware(['auth:sanctum', 'adminUser'])->prefix('project')->group(function () {
+
 });
